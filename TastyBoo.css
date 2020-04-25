@@ -1,0 +1,127 @@
+CSS Files for TastyBoo
+H1 {color:#0b8874;font-weight: bold;font-stretch: expanded;text-align:center;font-family: fantasy;font-size: 500%;text-transform: capitalize;text-decoration: none;letter-spacing: 0.2em;text-shadow: 8px 1px 3px #666666;
+
+}
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+h2 {text-transform:capitalize;
+letter-spacing: 0.2ems;
+margin-bottom: 10px;
+    color:#307910;
+    
+}
+Li{
+color: darkblue;
+    font-family: fantasy;text-shadow: 1px 0px 0px;
+
+}
+
+h3 {
+Color: red;
+
+}
+
+img.resize {
+    width: 250px;
+    height: 250px;
+}
+ul {
+Color:red;
+    font-size: 25px
+    }
+
+body {
+    text-align: justify;line-height: 1.5em;word-spacing:inherit;
+}
+p {
+    margin-bottom: 15px
+}
+
+
+* {
+    font-family: sans-serif
+
+    
+}
+p.intro:first-letter{font-size: 200%;
+    
+}
+p.intro:first-line {
+    font-weight: bold
+}
+/*shows color of link before it is tapped and visited shows the color of the link after a site is visited*/
+a:link {
+    color:deeppink; 
+    text-decoration: none
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color: deeppink;
+    text-decoration: underline;
+    
+}
+
+/*when button being pressed it feels real*/
+a:active {
+    color: darkcyan;
+}
+
+.credits {
+    font-style: italic;
+    text-align: left;
+    font-family: fantasy;
+    margin-top: 50px;
+}
+
+
+.container {
+    width:2540px;
+        margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px
+}
+
+
+
+.product {
+    background-color: aquamarine;
+    width: 50%;
+    
+}
+
+
+.introduction {
+    width: 50%;
+    background-color: #a4d966;
+     float: left;
+
+}
+
+.thumbail img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 50px
+    
+    
+}
+
+
+.author-box {
+    float: left;
+    width: 50%;
+        color: blue;
+    background-color: #d3c2e2
+}
+
+
+
+
+   
