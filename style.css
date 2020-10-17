@@ -1,6 +1,8 @@
 /*
 Orange color: #e67e22
-
+green :#50710ca8;
+black: #1f1f1f
+footer color green :rgba(107, 241, 142, 0.98)
 */
 
 
@@ -16,20 +18,18 @@ Orange color: #e67e22
 
 html,
 body {
-    background-color:#e6dcdc80;
+    background-color:#white;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     margin: 0 auto;
 }
 .main{
-    width: 90%;
+    width: 100%;
     margin: auto;
-
-
 
 }
 
@@ -39,7 +39,7 @@ body {
     clear: both;
     display: block;
     height: 0;
-    visibility: hidden;
+    visibility:hidden;
 }
 
 /* ----------------------------------------------- */
@@ -48,17 +48,99 @@ body {
 
 
 .row {
-    max-width: 1140px;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
 section {
-    padding: 80px 0;
+    padding: 1px 0;
 }
 
 .box {
     padding: 1%;
 }
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/backgrund-3\ copy.jpeg);
+    /* background-image: linear-gradient rgba(0, 0, 0, 0.7), rgba(39, 36, 36, 0.7), url(img/Healthy-Juice-Cleanse-Recipes-1.jpg);  */
+    /* background-image: linear-gradient rgba(0, 0, 0, 0.7), rgba(39, 36, 36, 0.7), url(/resources/img/background2\ copy.jpeg);  */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-color: rgb(255, 230, 0, 85, 75);
+   
+    
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 60%;
+    left: 50%;
+    font-family: fantasy;
+    font-weight: bold;
+ 
+    
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(241, 169, 86, 0.1); /* Black w/opacity/see-through */
+}
+h3 :hover {
+    margin-bottom: 3px solid #e67e22;
+}
+
+
+.logo {
+    height: 76px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 2px 0;
+    radius:50%;
+}
+
+/* Main navi */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    /* color: #fff; */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+
+
 
 /* ----- HEADINGS ----- */
 h1,
@@ -66,16 +148,18 @@ h2,
 h3 {
     font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#e67e22;
 
 }
 
 h1 {
      margin-top: 0;  /*this is imporftant to eliminate space above at the top as a result of the H1 top margin. */
     margin-bottom: 20px;
-    color:rgb(238, 123, 29);
+    /* color:rgb(238, 123, 29); */
     font-size: 440%;
     word-spacing: 4px;
-    letter-spacing: 1px;
+    letter-spacing: 18px;
 
     
 }
@@ -85,14 +169,12 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 40px;
     letter-spacing: 1px;
     color:rgb(81, 110, 52);
 }
 
-h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
-}
+
 
 h2:after {
     display: block;
@@ -100,33 +182,40 @@ h2:after {
     background-color: #e67e22;
     content: " ";
     width: 100px;
-    margin: 0 auto;
+    margin: 0 auto; /*this centres the orange line below heading */
     margin-top: 6px;
 }
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
 .refreshing{
     font-size: 180%;
     word-spacing: 3px;
-    letter-spacing: 16.5px;
-    color:#50710ca8;
+    letter-spacing: 15px;
+    color: white;
     display: block;
     font-weight: 400;
     text-align: left;
     
 }
 
-.beetroot img{
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    display: block;
-}
 
 /* ----- PARAGRAPHS ----- */
 .long-copy {
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
+    /* line-height: 145%; */
+    width: 80%;
+    margin-left: 1%;
+    color: #939598;
+    
+    
 }
+.long-copy ul{
+    list-style: none;
+}
+
 
 .box p {
     font-size: 90%;
@@ -135,34 +224,21 @@ h2:after {
     font-weight: 400;
 }
 
-
-/* ----- ICONS ----- */
-.icon-big {
-    font-size: 350%;
-    display: block;
-    color: #e67e22;
-    margin-bottom: 10px;
+.box img {
+    width: 85%;
+    height: 160px;
+    margin-bottom: 15px;
+    border-radius: 10%;
 }
 
-.icon-small {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 120%;
-    margin-right: 10px;
-    
-    /*secrets to align text and icons*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
+
+
 
 /* ----- LINKS ----- */
 
 a:link,
 a:visited {
-    color: #e67e22;
+    color: white;
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
@@ -223,100 +299,13 @@ input[type=submit]:active {
 }
 
 
-/* ----------------------------------------------- */
-/* HEADER */
-/* ----------------------------------------------- */
 
-header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/juice-slices2.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Healthy-Juice-Cleanse-Recipes-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-    background-color: rgb(255, 230, 0), 85, 75);
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    font-family: fantasy;
-    
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.logo {
-    height: 60px;
-    width: auto;
-    float: left;
-    margin-top: 10px;
-    border-radius: 50%;
-}
-
-.logo-black { 
-    display: none;
-    height: 50px;
-    width: auto;
-    float: left;
-    margin: 2px 0;
-    radius:50%;
-}
-
-/* Main navi */
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 55px;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
-}
-
-#fruits-used{
-    inline-size: fit-content;
-    border-bottom: 2px solid #e67e22;
-    color: rgb(81, 110, 52);;
-}
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
 
-h3 :hover {
-    margin-bottom: 3px solid #e67e22;
-}
 
-
-/* Mobile navi */
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-.mobile-nav-icon i {
-    font-size: 200%;
-    color: #fff;
-}
 
 
 /* Sticky navi */
@@ -325,7 +314,7 @@ h3 :hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: #e67e22;
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
@@ -344,11 +333,102 @@ h3 :hover {
 /* ----------------------------------------------- */
 /* FEATURES */
 /* ----------------------------------------------- */
+.welcome-section{
+    height: 70vh;
 
+}
 .section-features .long-copy {
     margin-bottom: 30px;
 }
 
+/*------------OUR BRANDS-------------------*/
+.production-photo{
+        width: 300px;
+        height: auto;
+        /* border: 0.5px solid rgb(238, 193, 45); */
+        /* background: url(resources/img/fac8.JPG); */
+      
+        background-repeat: repeat;
+        padding: 1px;
+        float: right;
+        clear: both;
+        margin: 20px 100px;
+        border: 1px solid #000000;
+      
+}
+.production-photo:hover{
+    opacity: 0.5;
+}
+
+.production-photo1{
+    width: 250px;
+    height: auto;
+    border: 0.5px solid rgb(238, 193, 45);
+    float: right;
+
+
+}
+.brands-section{
+    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+
+
+}
+
+.brands-main {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 40px 5px;
+   
+   
+   
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+  }
+
+  .brands img {
+    /* border: 1px solid olivedrab; */
+    border-radius: 50%;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+  }
+
+  .brands img:hover{
+    opacity: 1.7;
+}
+
+  
+  .brands p{
+      color: white;
+  }
+
+.brands{
+    flex-wrap:wrap;
+    align-content: center;
+    flex-grow: 0;
+    width: 23.3%;
+    height: auto;
+    /* background-color: whitesmoke; */
+    padding: 10px 5px;
+
+    border: 1px solid rgba(0, 0, 9, 0.18);
+    /* 9 */
+}
+#fruits-used {
+    text-align: center;
+    color: yellowgreen;
+}
 
 /* ----------------------------------------------- */
 /* MEALS */
@@ -396,232 +476,87 @@ h3 :hover {
     size: 30px;
 }
 
-
-
-/* ----------------------------------------------- */
-/* HOW IT WORKS SECTION */
-/* ----------------------------------------------- */
-
-.section-steps {
-    background-color: #f4f4f4;
-}
-
-.steps-box {
-    margin-top: 30px;
-}
-
-
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-}
-
-.steps-box:last-child {
-    text-align: left;
-    padding-left: 3%;
-    margin-top: 70px;
-}
-
-.app-screen {
-    width: 40%;
-}
-
-.works-step {
-    margin-bottom: 50px;
-}
-
-.works-step:last-of-type {
-    margin-bottom: 80px;
-}
-
-.works-step div {
-    color: #e67e22;
-    font-size: 150%;
-    height: 54px;
-    width: 54px;
-    border: 2px solid #e67e22;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    margin-right: 25px;
-    float: left;
-    padding: 5px;
-}
-
-.btn-app:link,
-.btn-app:visited {
-    border: 0;
-}
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
-
-/* ---------------------------------------------- */
-OUR PRODUCTS
-/* ------------------------------------------------- */
-
-.products-row{
-    display: block;
-    box-sizing: border-box;
-
-}
-.products{
-width:25% ;
-margin-bottom: 15px;
-box-sizing: border-box;
-float: left;
-padding:3px;
-}
-.products img{
-    height: 300px;
-}
-
-.products ul{
-    text-align: center;
-    list-style: none;
-    margin-left: -55px;
-    margin-top: 10px;
-    margin-bottom: 60px;
-    font-weight:lighter;
-    
-}
-.products p{
-    text-align: center;
-    font-weight: 500;
-    color: rgb(81, 110, 52);
-
-
-}
-
-
-
 /* ----------------------------------------------- */
 /* CITIES */
 /* ----------------------------------------------- */
-
-.box img {
-    width: 85%;
-    height: 110px;
-    margin-bottom: 15px;
-    border-radius: 10%;
+.cities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.city img {
+ width: 170px;
+ height: 160px;
+ 
 }
 
-.city-feature {
-    margin-bottom: 5px;
-}
-
-
-/* ----------------------------------------------- */
-/* TESTIMONIALS */
-/* ----------------------------------------------- */
-
-.section-testimonials {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/resources/css/img/juice-slices2.jpeg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-    display: none;
-    
-}
-
-blockquote {
-    padding: 2%;
-    font-style: italic;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-}
-
-blockquote:before {
-    content: "\201C";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-}
-
-cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
-}
-
-cite img {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-
-/* ----------------------------------------------- */
-/* SIGN UP */
-/* ----------------------------------------------- */
-
-.section-plans {
-    background-color: #f4f4f4;
-    display: none;
-}
-
-.plan-box {
-    background-color: #fff;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 0 2px 2px #efefef;
-    
-}
-
-.plan-box div {
-    padding: 15px;
-    border-bottom: 1px solid #e8e8e8;
-}
-
-.plan-box div:first-child {
-    background-color: #fcfcfc;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.plan-box div:last-child {
+figcaption {
+    font-weight: normal;
     text-align: center;
-    border: 0;
+    font-size: smaller;
+
 }
 
 
-.plan-price {
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #e67e22;
+
+/* -------------------------meet the Farmer----------------------------------------------------- */
+
+/*reframed farmers container*/
+.farmers-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 40px 5px;
+
+
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+
+
+
+.farmers{
+
+    align-content: center;
+    flex-grow: 0;
+    width: 23.3%;
+    height: auto;
+    /* background-color: whitesmoke; */
+    padding: 10px 5px;
+
+    border: 1px solid rgba(0, 0, 9, 0.18);
+    /* 9 */
 }
 
-.plan-price span {
-    font-size: 30%;
-    font-weight: 300;
+
+.farmers img {
+    /* border: 1px solid olivedrab; */
+    border-radius: 15%;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+  }
+
+  .farmers img:hover{
+    opacity: 1.7;
 }
 
-.plan-price-meal {
-    font-size: 80%;
-}
 
-.plan-box ul {
-    list-style: none;
-}
 
-.plan-box ul li {
-    padding: 5px 0;
-}
+
 
 
 /* ----------------------------------------------- */
 /* FORM */
 /* ----------------------------------------------- */
+
+
 .address{
     display:inline;
     float:left;
@@ -643,9 +578,11 @@ textarea {
     border: 1px solid #ccc;
 }
 
+
 textarea {
     height: 100px;
 }
+
 
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
@@ -659,11 +596,19 @@ input[type=checkbox] {
 /* ----------------------------------------------- */
 
 footer {
-    background-color:rgb(206, 236, 176);
+    /* background-color:#1b1a19; */
     padding: 50px;
     font-size: 80%;
     margin-bottom: 70px;
     width: 100%;
+    height: 150px;;
+
+
+
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(img/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer-nav {
@@ -733,14 +678,9 @@ footer {
 }
 
 
-/* footer p {
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-} */
 
 .address{
-    color: #888;
+    color:rgb(11, 235, 78);
     text-align: left;
     margin-top: -32px;
     word-spacing: -1px;
@@ -776,17 +716,73 @@ footer {
     opacity: 1;
 }
 
-.col span-1-of-4 box img{
-size: 80px;
+.brands {
+    display: flex;
+    flex-direction: column;
 }
+
+
+
 
 /* -----------------------Media queries------------------------------------------------- */
 /* ===================================================================================== */
-@media (min-width: 769px) {
-    .main{
+@media (max-width: 520px) {
+    body {
+      /* background: whitesmoke; */
+    }
+    .welcome-section img{
+        display: none;
+    }
+    .brands-main{
+        flex-direction: column;
         
+    }
+    .farmers-container{
+        flex-direction: column;
+    }
+
+    .brands{
+        width: fit-content;
+    }
+
+    .farmers{
+        width: fit-content;
+    }
 
 
+
+
+   
+  }
+
+  
+@media (min-width: 769px) {
+    main{
+        width:70%;
+        max-width: 1000px;
+        margin : 0 auto;
+        
+    }
+    .box img{
+        width: 50%;
+        height: auto;
+        margin-bottom: 70px;
+
+    }
+   
+}
+
+
+
+
+@media(min-width:  ) {
+
+    img{
+       flex-direction: column;
+    }
+    .fruits-img img {
+        width:fit-content;
     }
 
 }
+
