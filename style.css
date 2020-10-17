@@ -483,9 +483,11 @@ input[type=submit]:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    fill-opacity: unset;
+
 }
 .city img {
- width: 170px;
+ width: 180px;
  height: 160px;
  
 }
@@ -599,7 +601,7 @@ footer {
     /* background-color:#1b1a19; */
     padding: 50px;
     font-size: 80%;
-    margin-bottom: 70px;
+    margin-top: 120px;
     width: 100%;
     height: 150px;;
 
@@ -739,14 +741,21 @@ footer {
     }
     .farmers-container{
         flex-direction: column;
+        align-items: center;
     }
 
     .brands{
         width: fit-content;
     }
+    .cities img{
+        width: 300px;
+    }
 
     .farmers{
         width: fit-content;
+    }
+    .long-copy{
+        padding: 1em
     }
 
 
