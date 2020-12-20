@@ -28,13 +28,14 @@
     <body>
         <header>
             <nav>
-                <div class="row">
+                <div class="row-header">
                     <img src="resources/css/img/tastyboo-logo.png" alt="tastyboo-logo" class="logo">
                     <img src="resources/img/tastyboo_logo.JPG" alt="tastboo logo" class="logo-black">
                     <ul class="main-nav js--main-nav">
                         <li><a href="#features">Our Story</a></li>
                         <li><a href="#products">our products</a></li>
                         <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#farmer">Our Farmers</a></li>
                         <li><a href="#listening">contact us</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
@@ -51,15 +52,15 @@
         </header>
     <div class="main">   
         
-        <section class="welcome-section js--section-features" >
+        <section class="welcome-section js--section-features" id="features"  >
             <div class="row">
-                <h2>Healthy &mdash; Refreshing drinks</h2>
+                <h2   >Healthy &mdash; Refreshing drinks</h2>
                 <p class="long-copy">
-                    If you like your juice to be as tasty as can be, you're in the right place. Here at TASTYBOO we take pride in sourcing good fruit and crafting 100% fruit juice. 
-                    Obviously, we have removed the skin, but you and your families will savour the taste of wholesome fruit in every delicious glass. And because we strive to search out the tastiest fruits from as possible from local Ugandan farmers, you know you're drinking the best juices we could possibly make.<br>
-                    <img src="resources/img/fac8.JPG" alt="factory pic" class="production-photo" >
+                    If you like your juice to be as tasty as can be, you're in the right place.<br> Here at TASTYBOO we take pride in sourcing good fruit and crafting 100% fruit juice. <br>
+                    Obviously, we have removed the skin, but you and your families will savour the taste of wholesome fruit in every delicious glass. <br>
+                    <!-- <img src="resources/img/fac8.JPG" alt="factory pic" class="production-photo" > -->
 
-                    The produce is sourced from various parts of the country from farmers and communities who Tastyboo consider as partners. We go beyond the buyer-seller relationship in our engagements with our farmers ; it is more like family. <br>
+                     <br>
                     </p>
                
                 
@@ -68,12 +69,12 @@
         </section>
 
 
-        <section>
-            <h2>OUR BRANDS </h2>
+        <section class="our-brands" id="products">
+            <h2 >OUR BRANDS </h2>
             
             <div class=" brands-main">
                 <div class="brands-1 brands">
-                    <img src="resources/css/img/1000ml-juice -1L.jpg"></img>
+                    <img src="resources/css/img/vibes-bottle.jpg">
                     <h3 id="fruits-used">Orange juice</h3>
                     <p>
                         Orange juice is a liquid extract of the orange tree fruit, produced by squeezing oranges
@@ -81,33 +82,34 @@
                 </div>
 
                 <div class="brands-2 brands">
-                    <img src="resources/css/img/1000ml-juice -1L.jpg"></img>
+                    <img src="resources/css/img/vibes-bottle.jpg">
                     <h3 id="fruits-used">Mango Juice</h3>
                     <p>
                         We're extremely proud of our mango juice. We use the finest mangoes we could find, pressed into one of our fine upstanding product. Sweet, crisp, refreshing.
                         
                     </p>
                 </div>
+            </div>
 
-        
+            <div class=" brands-main">
                 <div class="brands-3 brands">
-                    <img src="resources/css/img/1000ml-juice -1L.jpg">
+                    <img src="resources/css/img/vibes-bottle.jpg">
                     <h3 id="fruits-used">Beetroot Juice</h3>
                     <p>
-                        This fabulous deep purple juice with a surprisingly sweet, and slightly earthy but rich taste is a great drink whether or not you are interested in its remarkable recently reported health benefits.
+                        This fabulous deep purple juice with a surprisingly sweet, and slightly earthy but rich taste is a great drink with remarkable health benefits.
                     </p>
                 </div>
                 <div class=" brands-4 brands">
-                    <img src="resources/css/img/1000ml-juice -1L.jpg">
+                    <img src="resources/img/">
                     <h3 id="fruits-used">Tropical Juice</h3>
                     <p>
-                        For something slightly more exotic in your glass, why not pour yourself a glass of our delicious new tropical blend? A combination of pineapples, passion fruits, mangoes, oranges and apples, it’s guaranteed to make the sun shine.
+                        For something slightly more exotic in your glass, why not pour yourself a glass of our delicious new tropical blend? 
                     </p>
                 </div>
             </div> 
         </section>
         
-        <section class="section-meals">
+        <!-- <section class="section-meals">
          
 
             <ul class="meals-showcase clearfix">
@@ -132,9 +134,9 @@
                     </figure>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
-    <section > 
+    <section id="cities"> 
     
                 <h2 >We're currently in these cities</h2>
            
@@ -178,17 +180,17 @@
 
     </section>
 
-    <section>
-        <h2>MEET OUR FARMERS </h2>
+    <section id="farmer">
+        <h2 >MEET OUR FARMERS </h2>
         
         <div class="farmers-container">
-            <div class="brands-1 farmers">
+            <!-- <div class="farmers-1 farmers">
                 <img src="resources/img/beetroot-s-e.JPG"></img>
                 <h3 id="fruits-used">Western Uganda</h3>
                 <p>
                     Beetroot is mainly found in Western Uganda by farmers with a long traditional of organic farming.  Our beetroot are sourced from local farmers on the long sloping hills of kabale.
                 </p>
-            </div>
+            </div> -->
 
             <div class="brands-2 farmers">
                 <img src="resources/css/img/agric-pic1.jpg"></img>
@@ -277,7 +279,7 @@
             </div>
         </section>
         
-        <footer>
+        <footer class="sticker">
 
             <div class="address" >
              
